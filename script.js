@@ -4,14 +4,14 @@ let firstError = document.querySelector(".firstError");
 let secondError = document.querySelector(".secondError");
 let firstInput = document.querySelector(".input1");
 let secondInput = document.querySelector(".input2");
-let firstValue = document.querySelector(".input1").value;
-let secondValue = document.querySelector(".input2").value;
+
 let pattern =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
  
 firstBtn.addEventListener("click", (e)=>{
     e.preventDefault();
-    if(firstValue.match(pattern)){
+    if(firstInput.value.match(pattern)){
         firstInput.style.border = "1px solid green"
+        firstError.style.display = "none"
         console.log("DONE")
     }
     else{
@@ -23,14 +23,14 @@ firstBtn.addEventListener("click", (e)=>{
 
 secondBtn.addEventListener("click", (e)=>{
     e.preventDefault();
-    if(secondValue.match(pattern)){
+    if(secondInput.value.match(pattern)){
         secondInput.style.border = "1px solid green"
+        secondError.style.display = "none"
         console.log("DONE")
     }
     else{
         secondError.innerHTML = "Please check your email"
-        secondInput.style.border = "1px solid red"
-        
+        secondInput.style.border = "1px solid red"    
     }
 });
 
