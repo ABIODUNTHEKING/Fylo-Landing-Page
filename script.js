@@ -16,6 +16,7 @@ firstBtn.addEventListener("click", (e)=>{
     }
     else{
         firstError.innerHTML = "Please check your email"
+        secondError.style.display = "block"
         firstInput.style.border = "1px solid red"
         
     }
@@ -30,6 +31,7 @@ secondBtn.addEventListener("click", (e)=>{
     }
     else{
         secondError.innerHTML = "Please check your email"
+        secondError.style.display = "block"
         secondInput.style.border = "1px solid red"    
     }
 });
