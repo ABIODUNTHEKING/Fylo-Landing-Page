@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+}
+
+h1{
+    font-size: 2rem;
+    
+}
+
+h1,h4, li{
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 0 3%;
+    
+}
+
+header img{
+    margin-left: 20px;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+    width: 20vw;
+}
+
+.navbar li{
+    display: inline-block;
+    list-style: none;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 30px 6%;
+}
+
+.intro{
+    margin-bottom: 10%;
+}
+
+.illustration{
+    width: 100%;
+}
+
+.info article{
+    width: 90%; 
+}
+
+.intro p{
+    margin: 10px 0;
+}
+
+.first p{
+    margin: 0;
+}
+
+
+.intro input{
+   width: 250px;
+    padding: 10px;
+    outline: 0;
+}
+
+.first{
+    display: flex;
+    gap: 10px;
+    
+}
+
+
+button{
+    background-color: hsl(224, 93%, 58%);
+    padding: 10px 25px;
+    max-height: 40px;
+    border: 0;
+    color: white;
+}
+
+.work{
+    background-image: url(./images/bg-curve-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vh;
+}
+
+.activities{
+    background-color: hsl(240, 75%, 98%);
+    height: 100%;
+    line-height: 1.6;  
+}
+
+.guide{
+    display: flex;
+    margin-bottom: 20px;
+    width: 170px;
+    padding: 4px 0;
+    color: hsl(170, 45%, 43%);
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    text-decoration: none;
+}
+
+.arrow{
+    display: inline-block;
+    width: 20px; 
+}
+
+.testimonial{
+    background-color: white;
+    border-radius: 10px;
+    width: 218px;
+    font-size: 10px;
+    padding: 20px;
+}
+
+.profileInfo{
+    display: flex;
+    align-items: center;
+    font-size: 7px;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.profileInfo img{
+    width: 30px;
+    border-radius: 50%;
+}
+
+.access{
+    background-color: hsl(238, 22%, 44%);
+    color: hsl(0, 0%, 75%);
+    padding: 20vh 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+
+.access article{
+    width: 38%;
+}
+
+.access form{
+    width: 50%;
+}
+
+.access form div input{
+    border: 1px solid black;
+    padding: 15px 10px;
+    width: 100%;
+    outline: 0;
+}
+
+.access h2{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footerInfo{
+    background-color: hsl(243, 87%, 12%);
+    color: hsl(0, 0%, 75%);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 5%;
+    gap: 20px;
+    
+}
+
+.logo{
+    width: 150px;
+}
+
+.footerInfo nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;  
+}
+
+
+.footerInfo li{
+    list-style: none;
+}
+
+.footerInfo a{
+    color: white;
+    text-decoration: none;
+}
+
+.footerInfo a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+.attribution{ 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%); 
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(243, 80%, 40%);
+    transition: 0.5ms;
+}
+
+.media li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social{
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 6px 10px;
+
+}
+
+.social:hover{
+    background-color: white;
+    color: hsl(243, 87%, 12%);
+    
+}
+
+.illustration1{
+    display: none;
+}
+
+.firstError, .secondError{
+    font-size: 10px;
+    color: red;
+}
+
+@media screen and (max-width: 750px){
+    header{
+        margin-bottom: 10%;
+    }
+    .first{
+        flex-direction: column;
+        gap: 2px;
+    }
+    .first p{
+        margin-bottom: 10px;
+        
+    }
+    .info{
+        flex-direction: column;
+        gap: 70px;
+        
+    }
+    .intro{
+        height: 100vh;
+        margin-bottom: 10%;
+    }
+    .intro input{
+        width: 100%;
+        margin-bottom: 0;
+        border: 1px solid black;
+    }
+    .intro button{
+        width: 100%;
+    }
+    header img{
+        width: 30%;
+    } 
+    header nav{
+        font-size: 15px;
+    }
+    .illustration{
+        display: none;
+    }
+    .illustration1{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .access{
+        display: block;
+        text-align: center;
+    }
+    .access article{
+        width: 100%;
+    }
+    .footerInfo nav{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .access form{
+        width: 100%;
+    }
+    .access form div input{
+        margin-bottom: 0;
+        border: 1px solid black;
+        width: 100%;
+    }
+    .access button{
+        width: 100%;
+    }
+    .navbar ul{
+        width: 50vw;
+    }
+    .work{
+        background-image: url(./images/bg-curve-mobile.svg);
+    }
+    .media{
+       display: block;
+       margin: 0 auto;
+    }
+    
+}
+
+@media screen and (max-width: 304px){
+    .navbar ul{
+       
+        font-size: 0.75rem;
+    }
+}
