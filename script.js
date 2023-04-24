@@ -45,7 +45,7 @@ secondBtn.addEventListener("click", (e)=>{
  
 
  window.addEventListener("scroll", ()=>{
-    if(window.scrollY > secondSection.offsetTop - navBar.offsetHeight - 195){
+    if(window.scrollY > navBar.offsetHeight){
         header.classList.add('active')
     }
     else{
