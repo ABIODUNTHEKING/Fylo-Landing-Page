@@ -71,15 +71,11 @@ header img{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
     padding: 30px 6%;
     word-spacing: 3px;
     line-height: 30px;
 
-}
-
-.intro{
-    margin-bottom: 10%;
 }
 
 .illustration{
@@ -97,7 +93,6 @@ header img{
 .first p{
     margin: 0;
 }
-
 
 .intro input{
    width: 250px;
@@ -142,6 +137,10 @@ button{
     color: hsl(170, 45%, 43%);
     border-bottom: 1px solid hsl(170, 45%, 43%);
     text-decoration: none;
+}
+
+.guide p{
+    font-size: 15.2px;
 }
 
 .arrow{
